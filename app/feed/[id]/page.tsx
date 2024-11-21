@@ -2,7 +2,7 @@ import images from "@/public/images";
 import Image from "next/image";
 import React from "react";
 
-const SingleFeedImagePage = async ({
+const SingleFeedImagePage = ({
   params: { id },
 }: {
   params: { id: number };
