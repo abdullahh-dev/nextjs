@@ -2,7 +2,7 @@ import images from "@/public/images";
 import Image from "next/image";
 import Link from "next/link";
 
-const FeedPage = () => {
+export default function FeedPage() {
   return (
     <div className="grid grid-cols-5 gap-4 p-12">
       {images.map((image) => (
@@ -25,6 +25,4 @@ const FeedPage = () => {
       ))}
     </div>
   );
-};
-
-export default FeedPage;
+}

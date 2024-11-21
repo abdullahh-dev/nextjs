@@ -34,7 +34,6 @@ export default function RootLayout({
           <Link href="/feed">Feed</Link>
           <Link href="/dashboard">Dashboard</Link>
         </div>
-
         {children}
       </body>
     </html>
