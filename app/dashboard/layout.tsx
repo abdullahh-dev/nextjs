@@ -1,12 +1,10 @@
 import { ReactNode } from "react";
 
 const DashboardLayout = ({
-  children,
   notifications,
   analytics,
   dashboard,
 }: {
-  children: ReactNode;
   notifications: ReactNode;
   analytics: ReactNode;
   dashboard: ReactNode;
