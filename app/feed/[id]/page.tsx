@@ -2,12 +2,14 @@ import images from "@/public/images";
 import Image from "next/image";
 import React from "react";
 
-const SingleFeedImagePage = ({
-  params: { id },
+const SingleFeedImagePage = async ({
+  params,
 }: {
-  params: { id: number };
+  params: Promise<{ id: string }>;
 }) => {
-  const image = images.find((image) => image.id == id);
+  const id = (await params)?.id;
+  const imageId = Number(id);
+  const image = images.find((image) => image.id === imageId);
 
   if (!image) return <div>Image not found</div>;
 
