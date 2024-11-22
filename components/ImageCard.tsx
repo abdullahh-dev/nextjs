@@ -1,7 +1,7 @@
 import { ImageType } from "@/types";
-import { Modal } from "@nextui-org/react";
 import Image from "next/image";
 import React from "react";
+import Modal from "./Modal";
 
 const ImageCard = ({ image: { src, alt } }: { image: ImageType }) => {
   return (

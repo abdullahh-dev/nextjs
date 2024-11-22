@@ -1,5 +1,11 @@
+import Link from "next/link";
+
 const Analytics = () => {
-  return <div>Analytics</div>;
+  return (
+    <div>
+      <Link href="dashboard/setting">Setting</Link>
+    </div>
+  );
 };
 
 export default Analytics;
